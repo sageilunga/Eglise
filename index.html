@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEC CENTRAL KINSHASA- Bienvenue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-church"></i>
+                <span>CENTRE D'EVANGELISATION CHARISMATIQUE</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#evenements" class="nav-link">Événements</a>
+                <a href="#communaute" class="nav-link">Communauté</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenue à l'Église CEC</h1>
+            <p class="hero-subtitle">Une communauté de foi, d'espoir et d'amour</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('services')">
+                    <i class="fas fa-heart"></i> Rejoignez-nous
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    <i class="fas fa-map-marker-alt"></i> Nous trouver
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-cross hero-icon"></i>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-pray service-icon"></i>
+                    <h3>Culte Dominicales</h3>
+                    <p>Dimanche de 8h00 à 11h30</p>
+                    <p>Venez célébrer ensemble dans la prière et la communion.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hands-helping service-icon"></i>
+                    <h3>Aide Communautaire</h3>
+                    <p>Programmes d'aide alimentaire</p>
+                    <p>Soutien aux familles dans le besoin et accompagnement spirituel.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-child service-icon"></i>
+                    <h3>Culte Semaine Mardi, jeudi</h3>
+                    <p>De 17h30 à 19h30</p>
+                    <p>Enseignement.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-ring service-icon"></i>
+                    <h3>Culte de jeune</h3>
+                    <p>Samedi de 16h30 à 19h00</p>
+                    <p>Accompagnement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Événements -->
+    <section id="evenements" class="events">
+        <div class="container">
+            <h2 class="section-title">Événements à Venir</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">25</span>
+                        <span class="month">Juillet</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Concert de Gospel</h3>
+                        <p><i class="fas fa-clock"></i> 19h30</p>
+                        <p>Soirée musicale avec la chorale paroissiale</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">02</span>
+                        <span class="month">Août</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Pique-nique Familial</h3>
+                        <p><i class="fas fa-clock"></i> 12h00</p>
+                        <p>Rassemblement convivial dans le jardin de l'église</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Août</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Pèlerinage Annuel</h3>
+                        <p><i class="fas fa-clock"></i> 8h00</p>
+                        <p>Voyage spirituel vers le sanctuaire régional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Communauté -->
+    <section id="communaute" class="community">
+        <div class="container">
+            <h2 class="section-title">Notre Communauté</h2>
+            <div class="community-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users stat-icon"></i>
+                    <div class="stat-number" data-target="450">0</div>
+                    <div class="stat-label">Paroissiens</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt stat-icon"></i>
+                    <div class="stat-number" data-target="52">0</div>
+                    <div class="stat-label">Événements/An</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-hand-holding-heart stat-icon"></i>
+                    <div class="stat-number" data-target="120">0</div>
+                    <div class="stat-label">Familles Aidées</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock stat-icon"></i>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Ans d'Histoire</div>
+                </div>
+            </div>
+            <div class="community-message">
+                <h3>Rejoignez Notre Famille Spirituelle</h3>
+                <p>Depuis plus de 150 ans, l'Église Saint-Michel est un phare de foi dans notre communauté. 
+                Nous accueillons chaleureusement tous ceux qui cherchent la paix, l'amour et la guidance spirituelle.</p>
+                <button class="btn btn-primary" onclick="openModal('contact-modal')">
+                    <i class="fas fa-envelope"></i> Nous Contacter
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-Nous</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informations</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Adresse</strong>
+                            <p>123 Rue de la Paix<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <p>01 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>contact@eglise-saint-michel.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Horaires</strong>
+                            <p>Lun-Ven: 9h-17h<br>Sam-Dim: 8h-19h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-nous un Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisir un sujet</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="mariage">Mariage</option>
+                                <option value="bapteme">Baptême</option>
+                                <option value="aide">Demande d'aide</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-church"></i> Église Saint-Michel</h3>
+                    <p>Une communauté de foi dédiée au service de Dieu et de nos semblables.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#evenements">Événements</a></li>
+                        <li><a href="#communaute">Communauté</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires des Messes</h4>
+                    <ul>
+                        <li>Dimanche: 8h00, 10h30, 18h00</li>
+                        <li>Semaine: 8h00 (Lun-Ven)</li>
+                        <li>Samedi: 18h00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Église Saint-Michel. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contact-modal')">&times;</span>
+            <h2>Contactez-Nous</h2>
+            <p>N'hésitez pas à nous contacter pour toute question ou demande. Nous sommes là pour vous accompagner.</p>
+            <button class="btn btn-primary" onclick="scrollToSection('contact'); closeModal('contact-modal')">
+                Aller au formulaire
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
